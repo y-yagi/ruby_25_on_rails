@@ -10,4 +10,4 @@ highlight : atom-one-light
 logo : assets/image/logo.png
 transition : none
 published : true
-footnote : "GitPitch [ White ] Presentation Template"
+footnote : "Ruby 2.5 on Rails 5.2"
