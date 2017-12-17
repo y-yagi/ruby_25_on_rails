@@ -39,9 +39,9 @@
 
 ---
 
-### [Fix duplicable? for Ratiional and Complex](https://github.com/rails/rails/commit/7045e03dee2cda9af65bc8e51bddab79599f44cd)
+### [Fix duplicable? for Rational and Complex](https://github.com/rails/rails/commit/7045e03dee2cda9af65bc8e51bddab79599f44cd)
 
-* Ratiional、ComplexがRuby 2.5ではdup出来るようになった為、それに合わせて`Complex#duplicable?`、`Rational#duplicable?`メソッドがtrueを返すようになった
+* Rational、ComplexがRuby 2.5ではdup出来るようになった為、それに合わせて`Complex#duplicable?`、`Rational#duplicable?`メソッドがtrueを返すようになった
 
 ---
 
@@ -66,9 +66,9 @@
 
 ### [ERB::Util.url_encode no longer escapes ~ since ruby 2.5](https://github.com/rails/rails/commit/f8b5b4af843cb3107071c7d9fdc0d76bb43c47d6)
 
-* `ERB::Util.url_encode`メソッドが`~`をエスケープしなくなった事による修正
+* `ERB::Util.url_encode`メソッドが`~`をエスケープしなくなった
   * [Bug \#6696: \[PATCH\] ERB::Util\.url\_encode should not escape unreserved characters](https://bugs.ruby-lang.org/issues/6696)
-* エスケープされなくなったのは、`~`はUnreserved Charactersに含まれていなかった為。
+* エスケープされなくなったのは、`~`はUnreserved Charactersに含まれていなかった為
   [RFC 3986 \- Uniform Resource Identifier \(URI\): Generic Syntax](https://tools.ietf.org/html/rfc3986#section-2.3)
 
 ---
