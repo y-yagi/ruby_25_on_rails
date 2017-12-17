@@ -81,6 +81,14 @@
 
 ---
 
+### [Suppress expected exceptions by `report_on_exception` = `false` in Ru…](https://github.com/rails/rails/commit/1d3fe75649e9e5dd9efacb7a6a0d9e9d12b3df34)
+
+* `Thread#report_on_exception`のデフォルトがtrueになった事により本来不要なエラーも表示されるようになった
+  * 不要な箇所では`report_on_exception`に`false`を指定するようにして対応した
+* が、これにより気付けたエラーもあったので、良かった
+
+---
+
 ## 惜しくも入らなかった対応
 
 ---
